@@ -1,0 +1,93 @@
+:root{
+    /*color palette for the project*/
+    --blue:#6687A3;
+    --yellow:#F3CA40;
+    --orange:#F2A541;
+    --mango:#F08A4B;
+    --red:#E74236;
+
+    /*fonts*/
+    --ff-primary: 'Rubik', sans-serif;
+    --ff-sencondary: 'Montserrat', sans-serif;
+
+    --transition: all 0.3s linear;
+
+}
+
+body{
+    background-color: var(--mango);
+}
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.show-links{
+    height: 150px;
+}
+
+.social-icons{
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}  
+
+.nav-toggle{
+    font-size: 15px;
+    transition: var(--transition);
+
+}
+
+.nav-toggle:hover{
+    transform: rotate(90deg);
+}
+ul{
+    list-style: none;
+}
+
+li{
+  font-family: var(--ff-sencondary);  
+}
+
+a{
+  color: black;
+  text-decoration: none;  
+  font-size: 25px;
+  padding: 10px;
+}
+
+.links a:hover{
+color: var(--yellow);
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+    font-family: var(--ff-primary);
+    font-size: 35px;
+    padding: 1.5 rem;
+}
+
+i{
+    size: 30px;
+
+}
+
+i:hover{
+    color: var(--yellow);
+}
+
+

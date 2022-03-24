@@ -1,0 +1,126 @@
+:root {
+    /*color palette for the project*/
+    --amaranth: #AB0A4D;
+    --steel-pink: #DE33DE;
+    --purple: #7402A8;
+    --violet: #59178F;
+    --grape: #51316E;
+    --orchid: #F09EDD;
+    --rose: #FA489E;
+    --pink: #C924C9;
+
+    /*fonts*/
+    --ff-primary: 'Rubik', sans-serif;
+    --ff-secondary: 'Montserrat', sans-serif;
+    --ff-third: 'Pacifico', cursive;
+
+    --transition: all 0.3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+body {
+    background: var(--amaranth);
+    color: var(--orchid);
+    line-height: 1.5;
+}
+
+.question-btn {
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--purple);
+    padding: 5px 4px;
+    display: inline-block;
+    border: solid 2px var(--purple);
+    border-radius: 3px;
+    transition: var(--transition);
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+.question-btn:hover {
+    color: var(--steel-pink);
+    border-color: var(--steel-pink);
+    transform: rotate(90deg);
+}
+
+.section-center {
+    width: 90wv;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media screen and (min-width:992px) {
+    .section-center {
+        width: 95wv;
+    }
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+}
+
+.title h2 {
+    color: var(--orchid);
+    font-family: var(--ff-third);
+    text-align: center;
+    font-size: 45px;
+}
+
+.question {
+    background-color: var(--orchid);
+    border-radius: 6px;
+    box-shadow: var(--light-shadow);
+    padding: 10px 10px 0 10px;
+    margin-bottom: 5px;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    color: var(--grape);
+    font-family: var(--ff-primary);
+    letter-spacing: .5px;
+}
+
+/*hide the text*/
+.question-text {
+    color: var(--amaranth);
+    font-family: var(--ff-secondary);
+    letter-spacing: .5px;
+    margin-bottom: 0;
+    padding: 10px 0 10px 0;
+    border-top: 1px solid var(--steel-pink);
+    display: none;
+}
+
+.show-text .question-text{
+display: block;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.show-text .minus-icon{
+    display: inline;
+
+}
+
+.show-text .plus-icon{
+    display: none;
+}
+

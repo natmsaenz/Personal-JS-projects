@@ -1,0 +1,169 @@
+/*
+fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Oxygen:wght@300&family=Pacifico&display=swap');
+
+
+/*variables*/
+
+:root {
+    /*color palette*/
+    --peach: #FFDAB9;
+    --apricot: #FBC4AB;
+    --melon: #F8AD9D;
+    --congo: #F4978E;
+    --coral: #F08080;
+    --madder: #CC3E3E;
+
+    /*fonts*/
+    --ff-first: 'Be Vietnam Pro', sans-serif;
+    --ff-second: 'Oxygen', sans-serif;
+    --ff-third: 'Pacifico', cursive;
+
+    /*others*/
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+/*
+Global styles
+*/
+
+body {
+    line-height: 1.5;
+    font-size: .875rem;
+}
+
+h1 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    font-family: var(--ff-third);
+    font-size: 70px;
+    color: var(--melon);
+}
+
+@media screen and(min-width:800px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+
+}
+
+
+
+
+/*video*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: var(--transition);
+}
+
+.hide-preloader {
+    z-index: 999;
+    visibility: hidden;
+}
+
+header {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/*switch button*/
+
+.switch-btn {
+    text-transform: uppercase;
+    background: var(--coral);
+    color: var(--madder);
+    padding: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: var(--transition);
+    font-size: 30px;
+    border: 2px solid var(--coral);
+    cursor: pointer;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.switch-btn:hover {
+    background: var(--apricot);
+}
+
+.switch-btn span{
+    display: inline-block;
+    font-size:10px;
+    cursor: pointer;
+text-transform: capitalize;
+
+}
+
+.switch{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: block;
+    background: var(--coral);
+    transition: var(--transition);
+
+}
+
+.slide .switch{
+    left: 50%;
+}
+
+
+/*header after*/
+
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}

@@ -1,0 +1,132 @@
+:root {
+    /*color palette for the project*/
+    --pink: #E0479E;
+    --eggplant: #553E4E;
+    --blossom: #FFAFC5;
+    --baby: #FFCFD2;
+    --pine: #4EA699;
+    /*fonts*/
+    --ff-primary: 'Rubik', sans-serif;
+    --ff-secondary: 'Montserrat', sans-serif;
+
+    --transition: all 0.3s linear;
+
+    --max-width: 1170px;
+    --fixed-width: 620px;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--baby);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 2px;
+    transition: var(--transition);
+    transform: translate(-100%);
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+@media screen and (min-width:676px) {
+    .sidebar{
+        width: 400px;
+    }
+    
+}
+
+body {
+    background-color: var(--blossom);
+    color: var(--eggplant);
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+h1 {
+    font-family: var(--ff-primary);
+    font-size: 30px;
+    letter-spacing: var(--spacing);
+    justify-self: center;
+    height: 40px;
+}
+
+aside {
+    background-color: var(--baby);
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--pine);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.close-btn {
+    background: transparent;
+    border-color: transparent;
+    color: var(--pine);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: var(--pink);
+    transform: rotate(360deg);
+}
+
+.links a {
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--eggplant);
+    font-family: var(--ff-secondary);
+    font-size: 20px;
+    transition: var(--transition);
+
+
+}
+
+.links a:hover{
+    color: var(--pink);
+}
+
+.social-icons{
+    justify-self: center;
+    display: flex;
+
+}
+
+.social-icons a{
+    margin: 5px;
+    color: var(--eggplant);
+    font-size: 20px;
+    transition: var(--transition);
+
+}
+
+.social-icons a:hover{
+    color: var(--pink);
+}

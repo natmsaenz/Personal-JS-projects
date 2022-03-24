@@ -1,0 +1,100 @@
+:root{
+    /*color palette for the website*/
+    --sandy: #F59B5F ;
+    --redSalsa: #EE4444;
+    --orange: #FA702A;
+    --redPigm: #F62828;
+    --mellow: #F2BB77;
+    --mango: #FA7F41;
+    --liberty: #5656B3;
+
+    /*fonts*/
+    --primary-font: "Rubik", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+}
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--sandy);
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+div{ 
+    text-align: center;
+}
+
+.button-container{
+    margin-top: 6px;
+    padding-top: 36px; 
+    padding-bottom: 30px;
+    justify-items: center;
+    
+}
+
+h1,h2,h3,h4{
+    font-family: var(--primary-font);
+
+}
+
+h2{
+    font-size: 45px;
+    color: var(--liberty);
+}
+
+h4{
+    font-size: 30px;
+}
+#job{
+    font-family: var(--primary-font);
+    font: bold ;
+    font-size: 25px;
+    color: var(--redPigm);
+}
+
+#info{
+    font-family: var(--secondary-font);
+    font: bold;
+    font-size:20px ;
+}
+
+img{
+    border-radius: 360px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.img-container{
+    margin-left: 530px;
+    margin-right: 50px;
+    background-color: var(--redSalsa);
+    border-radius: 360px;
+    width: 260px;
+    height: 260px;
+    padding:  18px 20px 20px 20px;
+}
+
+.info-container{
+    margin: 90px;
+    background-color: var(--mango);
+    padding: 40px;
+    border: 40px;
+    border-radius: 15px;
+}
+
+button{
+    background-color: transparent;
+    border-color: var(--liberty);
+    color: var(--liberty);
+    border-radius: 5px;
+    border-style: solid;
+    font-size: 40px;
+    font-family: var(--secondary-font);
+    margin-top: 0px;
+    padding: 15px;
+}
