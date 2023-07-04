@@ -27,3 +27,25 @@ div{
     width: 100px;
     height: 90px;
 }
+
+@media (max-width: 600px) {
+    .div1 {
+        width: 80%;
+        height: auto;
+      }
+      
+      .div2 {
+        width: 60%;
+        height: auto;
+      }
+      
+      .div3 {
+        width: 40%;
+        height: auto;
+      }
+  }
+  
+  In the code above, a media query is added using @media (max-width: 600px) to target screens with a maximum width of 600 pixels. Inside the media query, the widths of .div1, .div2, and .div3 are modified to be relative (%) and the heights are set to auto. This allows the divs to resize and stack vertically when the screen size is reduced.
+  
+  You can adjust the values inside the media query to match your desired responsive behavior for different screen sizes. Additionally, you can add more media queries to target different screen sizes and apply specific styles accordingly.
+  
