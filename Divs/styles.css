@@ -1,0 +1,29 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.div1{
+    background-color: salmon;
+    border: 5px solid black;
+    width: 400px;
+    height: 300px;
+}
+
+.div2{
+    background-color: lightblue;
+    border: 5px solid black;
+    width: 200px;
+    height: 100px;
+}
+
+.div3{
+    background-color: lightblue;
+    border: 5px solid black;
+    width: 100px;
+    height: 90px;
+}
